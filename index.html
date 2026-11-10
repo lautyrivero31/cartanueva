@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Sofita</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .fade-in {
+            animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .envelope-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 sm:p-6 bg-slate-950">
+
+    <main class="w-full max-w-xl mx-auto">
+        <!-- PANTALLA INICIAL: SOBRE -->
+        <div id="envelope-screen" class="flex flex-col items-center justify-center min-h-[70vh] fade-in">
+            <div class="w-full max-w-sm bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center envelope-shadow relative overflow-hidden">
+                <div class="absolute -top-12 -left-12 w-24 h-24 bg-slate-800/40 rounded-full blur-xl"></div>
+                
+                <div class="w-14 h-14 bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-6 border border-slate-700/50">
+                    <svg class="w-6 h-6 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+
+                <h1 class="text-xl font-medium text-slate-200 mb-2">Para sofita</h1>
+                <p class="text-sm text-slate-400 mb-8 font-light">Tenés un mensaje guardado</p>
+
+                <button onclick="openLetter()" class="w-full py-3 px-6 bg-slate-100 hover:bg-white text-slate-950 font-medium rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-slate-500/10 active:scale-[0.98]">
+                    Abrir mensaje
+                </button>
+            </div>
+        </div>
+
+        <!-- PANTALLA CARTA -->
+        <div id="letter-screen" class="hidden fade-in py-8">
+            <div class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-6 sm:p-10 shadow-2xl backdrop-blur-sm">
+                
+                <header class="border-b border-slate-800 pb-6 mb-8 flex justify-between items-end">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-slate-500 font-medium">Nota personal</span>
+                        <h2 class="text-2xl font-medium text-slate-100 mt-1">Para sofita</h2>
+                    </div>
+                </header>
+
+                <article class="prose prose-invert prose-slate max-w-none text-slate-300 font-light leading-relaxed whitespace-pre-line text-base sm:text-lg mb-10">
+Hola, como estas? bueno no se que decir la verdad. pero aca vamos...
+Quizas no sean las mejores palabras o quizas ni siquera lo leas, creo que te lo voy a enviar cuando nos veamos porque da pena el chat y para que me ignores prefiero al menos verte que lo tenes ahi.
+Esto es un poco lo que te quiero decir ya que no se como va aser el momento en el que hablemos y tambien no se cuantas cosas ¨lindas¨ me salgan en este momento. Sabes que no se escribir pero una de las cosas que mas te agradezco es que me hayas empujado a que lo intente (se que no te gusta como lo hago). No me va a alcanzar la vida para agradecerte todo lo que hiciste por mi y mi familia. Escribo esto un poco a ciegas, intentare que sea lo mas neutro y amigable posible. 
+Bueno, sofi, sofita, sof, mi amor, mi gordita, toffi, mi cielo, mi vida: gracias y mas gracias, sos la mina mas hermosa y le agradezco a dios y a la vida haberme cruzado con vos en mi camino. me cambiaste la vida, me enseñaste cosas que no creia que podia aprender, me hiciste sentir invencible y que ironico que ahora es el antonimo de eso, pero bueno, nada va a borrar lo bueno y pesa igual que lo malo, te amo con mi alma y si te vas  una parte de mi desaparece, es injusto para el resto pero es asi, se que me amas y que el momento este no delimita ni como somos como personas ni cuanto nos queremos.
+Aveces me quedo pensando a oscuras si aun me queres abrazar o besar, aunque ya no se si me queres ver, quizas venis y me hablas a la semana, pero bueno eso ya depende de vos y tambien esas decisiones tendran sus consecuencias. 
+Me pegaste tu musica, algunas expresiones y por sobre todo me mostraste como es todo desde los ojos de otra persona, bien o mal, lo lograste y espero estes orgullosa, me ayudaste a crecer y progresar, que por un error no es el fin del mundo, me ayudaste a querer seguir un poco mas, me pusiste el hombro cuando lo necesitaba y me sostuviste cuando me caia. me acompañaste cuando me sentia solo y te comiste toda mi mierda vos sola, dejando de lado a veces como vos te sentias priorizandome a mi antes que a vos y eso muestra la persona que sos. Como es de publico conocimiento, saber que estas tan lejos me destruye completamente, y si tambien soportaste eso. Nose como vamos a afrontar esto, tener presente que te perdi es dificil y me quito las ganas de todo, no supe amarte como lo necesitabas y creo que la decision que tomaste esta perfecta, y confio en que despues de esto, tambien vas a acertar todo. No quiero que verme cambie algo, seria injusto que quieras eso solo cuando me ves, y si se que estas pensando: este vatillo ijueputa lo hizo conmigo. pero no, no es ni fue asi por una simple cosa, te queria a pesar de la distancia. Porque si no te hubiera dejado en marzo y sabes que es asi. Hoy si me cuesta dejarte ir, nunca va a ser facil y menos si se trata de separarme del amor de mi vida, se que es lo mejor para los dos y que seguramente estas mejor sin mi, los puntos del porque creo esto los sabras cuando nos juntemos a hablar, que si te extraño horrores y quiero verte, toca esperar. Espero no lo analises esto porque esta escrito con las patas y la voz de mi cabeza jsjsjsjs.
+                </article>
+
+                <!-- TARJETA CANCIÓN -->
+                <section class="bg-slate-950/80 border border-slate-800 rounded-xl p-5 sm:p-6 mt-8">
+                    <p class="text-xs uppercase tracking-wider text-slate-400 font-medium mb-3">Canción especial</p>
+                    <p class="text-sm text-slate-300 italic mb-4">Escuche esta cancion y creo que hay varias partes donde estoy bastante identificado y me gustaria dedicartela, pedirte que las escuches con los ojos cerrados y auris. pliss</p>
+                    
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2 border-t border-slate-800/80">
+                        <div>
+                            <p class="text-sm text-slate-400">Artista</p>
+                            <p class="text-base font-medium text-slate-200">Ra-Rauw</p>
+                        </div>
+                        <a href="https://open.spotify.com/intl-es/track/1G7dT2vBltjqflkUEHwRoX?si=0c53c4a2d068411c" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors duration-200">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.899 4.56-1.021 8.52-.6 11.64 1.32.42.18.48.66.301 1.019zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.72 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.56.3z"/>
+                            </svg>
+                            Escuchar canción
+                        </a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function openLetter() {
+            document.getElementById('envelope-screen').classList.add('hidden');
+            document.getElementById('letter-screen').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
